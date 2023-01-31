@@ -21,7 +21,6 @@ namespace ConsoleApplication4.Models
 
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
-            // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
             int qntHospedes;
             Console.WriteLine("Digite a quantidade de hóspedes: ");
             while (!int.TryParse(Console.ReadLine(), out qntHospedes))
@@ -54,25 +53,17 @@ namespace ConsoleApplication4.Models
 
         public int ObterQuantidadeHospedes()
         {
-            // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
             int quantidadeHospedes = Hospedes.Count;
-            // *IMPLEMENTE AQUI*
             return quantidadeHospedes;
         }
 
         public decimal CalcularValorDiaria()
         {
-            // TODO: Retorna o valor da diária
-            // Cálculo: DiasReservados X Suite.ValorDiaria
-
-
             decimal valor = Suite.ValorDiaria;
 
-            // Regra: Caso os dias reservados forem maior ou igual a 10, conceder um desconto de 10%
-            // *IMPLEMENTE AQUI*
             if (DiasReservados >= 10)
             {
-                valor = valor * ((valor/100)*10);
+                valor = valor * ((valor / 100) * 10);
             }
             else
             {
@@ -80,6 +71,7 @@ namespace ConsoleApplication4.Models
             }
 
             return valor;
+
         }
     }
 }

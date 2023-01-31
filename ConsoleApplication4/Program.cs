@@ -11,16 +11,7 @@ namespace ConsoleApplication4
     {
         static void Main(string[] args)
         {
-            // Cria os modelos de hóspedes e cadastra na lista de hóspedes
             List<Pessoa> hospedes = new List<Pessoa>();
-
-            //Pessoa p1 = new Pessoa(nome: "Hóspede 1");
-            //Pessoa p2 = new Pessoa(nome: "Hóspede 2");
-
-            //hospedes.Add(p1);
-            //hospedes.Add(p2);
-
-            // Cria a suíte
 
             string opcao = string.Empty;
             bool exibirMenu = true;

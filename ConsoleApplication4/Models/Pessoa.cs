@@ -10,11 +10,6 @@ namespace ConsoleApplication4
     {
         public Pessoa() { }
 
-        public Pessoa(string nome)
-        {
-            Nome = nome;
-        }
-
         public Pessoa(string nome, string sobrenome)
         {
             Nome = nome;
